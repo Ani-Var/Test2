@@ -3,3 +3,9 @@
 /README.md
 /.idea
 /pytest_cache/
+/allureress
+/.allureress
+/allureress/
+/allure-results/
+.\allure-results\
+\allure-results\
