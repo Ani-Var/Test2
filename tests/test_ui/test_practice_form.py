@@ -1,3 +1,5 @@
+from idlelib import browser
+
 import allure
 import pytest
 from playwright.sync_api import Page
@@ -26,6 +28,9 @@ class TestPractice:
             errors.extend(PracticeFormMethods.submit_form(practice_form))
         except AssertionError as e:
             errors.append(str(e))
+        page.screenshot(path='screenshot.png', full_page=True)  # Сохранение скриншота всей страницы
+        print("Скриншот успешно сохранен как 'screenshot.png'")
+        browser.close()
 
         if errors:
             pytest.fail(f"Тест завершился с ошибками: {', '.join(errors)}")
