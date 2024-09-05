@@ -13,7 +13,7 @@ class BasePage:
     @staticmethod
     def open_page(page: Page, url: str) -> None:
         try:
-            page.goto(url, timeout=5000, wait_until='domcontentloaded')
+            page.goto(url, timeout=8000, wait_until='domcontentloaded')
         except TimeoutError:
             print("Тест дождался пока страница загрузится, продолжился и выполнился")
 
