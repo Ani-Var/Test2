@@ -19,7 +19,7 @@ class PracticeFormMethods:
         errors = []
         try:
             with allure.step("Ввод электронной почты"):
-                practice_form.email.fill("ivan.ivanov@example.com")
+                practice_form.email.fill("ivan.ivanov@Gmail.com")
         except AssertionError as e:
             errors.append(str(e))
         return errors
@@ -73,8 +73,6 @@ class PracticeFormMethods:
         except AssertionError as e:
             errors.append(str(e))
         return errors
-
-
 
     @staticmethod
     def submit_form(practice_form: PracticeFormPage):

@@ -25,7 +25,7 @@ class TestTextBox:
             errors.append(str(e))
 
         page.screenshot(path='img/screenTextBox.png', full_page=True)  # Сохранение скриншота всей страницы
-        print("Скриншот успешно сохранен как 'screenshot.png'")
+        print("Скриншот успешно сохранен как 'screenTextBox.png'")
         browser.close()
 
         if errors:

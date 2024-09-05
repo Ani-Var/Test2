@@ -5,7 +5,7 @@ from src.config.playwright import PlaywrightConfig
 from base.pages.practice_form.practice_form_page import PracticeFormPage
 from base.pages.text_box.text_box_page import TextBoxPage
 from playwright.sync_api import Page, sync_playwright, Browser
-
+from base.pages.checkbox.checkbox_page import CheckboxPage
 
 @pytest.fixture()
 def page() -> Page:
@@ -29,3 +29,7 @@ def practice_form(page: Page) -> PracticeFormPage:
 @pytest.fixture(scope='function')
 def text_box_page(page: Page) -> TextBoxPage:
     return TextBoxPage(page)
+
+@pytest.fixture(scope='function')
+def checkbox_page(page: Page) -> CheckboxPage:
+    return CheckboxPage(page)

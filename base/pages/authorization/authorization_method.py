@@ -13,3 +13,7 @@ class AuthorizationMethod:
     @staticmethod
     def text_box(page: Page):
         BasePage.open_page(page, Url.TEXT_BOX)
+
+    @staticmethod
+    def checkbox(page: Page):
+        BasePage.open_page(page, Url.CHECKBOX)
