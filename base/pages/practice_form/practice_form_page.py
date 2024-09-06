@@ -24,6 +24,7 @@ class PracticeFormPage:
         self.Wait_first_name = '//*[@id="firstName"]'
         self.Wait_last_name = '//*[@id="lastName"]'
         self.Wait_email = '//*[@id="userEmail"]'
+        self.Wait_gender_male ='//*[@for="gender-radio-1"]'
         self.Wait_mobile_number = '//*[@id="userNumber"]'
         self.Wait_subjects ='//*[@id="subjectsInput"]'
         self.Wait_hobbies ='//*[@for="hobbies-checkbox-1"]'

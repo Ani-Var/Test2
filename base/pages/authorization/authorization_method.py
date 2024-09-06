@@ -17,3 +17,7 @@ class AuthorizationMethod:
     @staticmethod
     def checkbox(page: Page):
         BasePage.open_page(page, Url.CHECKBOX)
+
+    @staticmethod
+    def auth_radiobutton(page: Page):
+        BasePage.open_page(page, Url.RADIO_BUTTON)

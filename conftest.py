@@ -1,6 +1,7 @@
 
 import pytest
 
+from base.pages.radio_button.radio_button_page import RadioButtonPage
 from src.config.playwright import PlaywrightConfig
 from base.pages.practice_form.practice_form_page import PracticeFormPage
 from base.pages.text_box.text_box_page import TextBoxPage
@@ -33,3 +34,7 @@ def text_box_page(page: Page) -> TextBoxPage:
 @pytest.fixture(scope='function')
 def checkbox_page(page: Page) -> CheckboxPage:
     return CheckboxPage(page)
+
+@pytest.fixture(scope='function')
+def radio_button_page(page: Page) -> RadioButtonPage:
+    return RadioButtonPage(page)

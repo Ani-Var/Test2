@@ -13,7 +13,7 @@ class CheckboxStart:
                 AuthorizationMethod.checkbox(page)
 
             with allure.step("Взаимодействие с чекбоксами"):
-                errors.extend(CheckboxMethods.interact_with_checkboxes(checkbox_page))
+               CheckboxMethods.interact_with_checkboxes(checkbox_page)
 
         except AssertionError as e:
             errors.append(str(e))
