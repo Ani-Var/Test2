@@ -1,6 +1,8 @@
 
 import pytest
 
+from base.pages.button.button_page import ButtonPage
+from base.pages.modal_dialogs.modal_dialogs_page import ModalDialogsPage
 from base.pages.radio_button.radio_button_page import RadioButtonPage
 from src.config.playwright import PlaywrightConfig
 from base.pages.practice_form.practice_form_page import PracticeFormPage
@@ -38,3 +40,11 @@ def checkbox_page(page: Page) -> CheckboxPage:
 @pytest.fixture(scope='function')
 def radio_button_page(page: Page) -> RadioButtonPage:
     return RadioButtonPage(page)
+
+@pytest.fixture(scope='function')
+def button_page(page: Page) -> ButtonPage:
+    return ButtonPage(page)
+
+@pytest.fixture(scope='function')
+def modal_dialogs_page(page: Page) -> ModalDialogsPage:
+    return ModalDialogsPage(page)

@@ -21,3 +21,11 @@ class AuthorizationMethod:
     @staticmethod
     def auth_radiobutton(page: Page):
         BasePage.open_page(page, Url.RADIO_BUTTON)
+
+    @staticmethod
+    def auth_buttons_page(page: Page):
+        BasePage.open_page(page, Url.BUTTONS)
+
+    @staticmethod
+    def auth_modal_dialogs(page: Page):
+        BasePage.open_page(page, Url.MODAL_DIALOGS)
