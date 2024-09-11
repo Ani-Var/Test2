@@ -2,6 +2,7 @@
 import pytest
 
 from base.pages.button.button_page import ButtonPage
+from base.pages.date_picker.date_picker_page import DatePickerPage
 from base.pages.modal_dialogs.modal_dialogs_page import ModalDialogsPage
 from base.pages.radio_button.radio_button_page import RadioButtonPage
 from src.config.playwright import PlaywrightConfig
@@ -48,3 +49,7 @@ def button_page(page: Page) -> ButtonPage:
 @pytest.fixture(scope='function')
 def modal_dialogs_page(page: Page) -> ModalDialogsPage:
     return ModalDialogsPage(page)
+
+@pytest.fixture(scope='function')
+def date_picker(page: Page) -> DatePickerPage:
+    return DatePickerPage(page)

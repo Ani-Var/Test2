@@ -29,7 +29,7 @@ class TestPractice:
         except AssertionError as e:
             errors.append(str(e))
 
-        page.screenshot(path='img/screenshot.png', full_page=True)  # Сохранение скриншота всей страницы
+        page.screenshot(path='img/screenshot.png', full_page=True)
         print("Скриншот успешно сохранен как 'screenshot.png'")
         browser.close()
 

@@ -24,8 +24,8 @@ class ModalDialogsStart:
                 ModalDialogsMethods.open_large_modal(modal_dialogs)
 
             with allure.step("Закрытие большого модального диалога"):
-                    ModalDialogsMethods.close_large_modal(modal_dialogs)
+                ModalDialogsMethods.close_large_modal(modal_dialogs)
 
         except AssertionError as e:
             errors.append(str(e))
-        return errors
+

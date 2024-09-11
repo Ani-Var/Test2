@@ -29,3 +29,7 @@ class AuthorizationMethod:
     @staticmethod
     def auth_modal_dialogs(page: Page):
         BasePage.open_page(page, Url.MODAL_DIALOGS)
+
+    @staticmethod
+    def auth_date_picker(page: Page):
+        BasePage.open_page(page, Url.DATE_PICKER)

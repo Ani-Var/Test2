@@ -16,7 +16,7 @@ class PracticeFormPage:
         self.mobile_number = Input(page, locator='//*[@id="userNumber"]', name='Мобильный номер')
 
         self.subjects = Input(page, locator='//*[@id="subjectsInput"]', name='Предметы')
-        self.hobbies = Button(page, locator='//*[@for="hobbies-checkbox-1"]', name='Спорт')  # Чекбокс Спорт
+        self.hobbies = Button(page, locator='//*[@for="hobbies-checkbox-1"]', name='Спорт')
 
         self.submit_button = Button(page, locator='//*[@id="submit"]', name='Отправить')
 
